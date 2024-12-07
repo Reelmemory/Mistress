@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Details</title>
+    <link rel="stylesheet" href="../css/ship.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form action="https://oxapay.com/pay/95468636">
+                <h1>
+                    <i class="fas fa-shipping-fast"></i>
+                    Shipping Details
+                </h1>
+                <div class="name">
+                    <div>
+                        <label for="f-name">First Name</label>
+                        <input type="text" name="f-name" required>
+                    </div>
+                    <div>
+                        <label for="l-name">Last Name</label>
+                        <input type="text" name="l-name" required>
+                    </div>
+                </div>
+                <div class="street">
+                    <label for="name">Street</label>
+                    <input type="text" name="address" required>
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city" required>
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" name="state" required>
+                    </div>
+                    <div>
+                        <label for="zip">Zip</label>
+                        <input type="number" name="zip" required>
+                    </div>
+                </div>
+                <!-- <h1>
+                    <i class="far fa-credit-card"></i> Payment Information
+                </h1>
+                <div class="cc-num">
+                    <label for="card-num">Credit Card No.</label>
+                    <input type="text" name="card-num">
+                </div>
+                <div class="cc-info">
+                    <div>
+                        <label for="card-num">Exp</label>
+                        <input type="text" name="expire">
+                    </div>
+                    <div>
+                        <label for="card-num">CCV</label>
+                        <input type="text" name="security">
+                    </div>
+                </div> -->
+                <div class="btns">
+                   <input type="submit" class="button">
+                       Purchase
+                   </input> 
+                    
+                    <a href="../catalogue.html" class="button">Back to item</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

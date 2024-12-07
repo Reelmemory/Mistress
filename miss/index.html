@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        .slideshow {
+  list-style-type: none;
+}
+
+/** SLIDESHOW **/
+.slideshow,
+.slideshow:after {
+  top: -16px; /*Not sure why I needed this fix*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  z-index: 0;
+}
+
+.slideshow li span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size:cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 30s linear infinite 0s;
+}
+
+.slideshow li:nth-child(1) span {
+  background-image: url("./img/S4.png");
+}
+.slideshow li:nth-child(2) span {
+  background-image: url("./img/S1.png");
+  animation-delay: 6s;
+}
+.slideshow li:nth-child(3) span {
+  background-image: url("./img/S2.png");
+  animation-delay: 12s;
+}
+.slideshow li:nth-child(4) span {
+  background-image: url("./img/S3.png");
+  animation-delay: 18s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.no-cssanimations .cb-slideshow li span {
+  opacity: 1;
+}
+
+    </style>
+    <title>GLAMOROUS👑</title>
+</head>
+<body>
+    
+
+
+
+    <nav>
+        <div class="navbar">
+          <div class="container nav-container">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>  
+            <div class="logo">
+              <h1>MISTRESS GLAMOROUS</h1>
+            </div>
+            <div class="menu-items" style="background-color: red;">
+                <li><a style="font-family: cursive; font-size: 30px;"  href="./index.html">MISTRESS GLAMOROUS</a></li>
+
+                <li><a  href="./aboutme.html">ABOUT</a></li>
+                <li><a  href="./gallery.html">GALLERY</a></li>
+                <li><a href="./dungeon.html">DUNGEON</a></li>
+                <li><a href="./sessions-etiquette.html">SESSIONS & ETIQUETTE</a></li>
+                <li><a href="./gifts-tributes.html">GIFTS & TRIBUTES</a></li>
+                <li><a href="./catalogue.html">CATALOGUE</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="landing">
+        <h1>Welcome to the <br> <span>Realm of Desire and Domination</span></h1>
+       <marquee behavior="slide" direction="left"><h3>Embrace your true self, submit to the experience..</h3></marquee>
+       <p>Are you ready to explore the exhilarating depths of your desires? Join me, and together we’ll craft unforgettable moments that linger long after our time together.</p>
+        
+      </div>
+
+   
+<div>
+  <ul class="slideshow">
+    <li><span></span></li>
+    <li><span>2</span></li>
+    <li><span></span></li>
+    <li><span></span></li>
+  </ul>
+</div>
+
+</body>
+</html>
+
+<!-- <script src="./js/script.js"></script> -->
