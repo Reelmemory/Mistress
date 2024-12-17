@@ -16,7 +16,7 @@ body {
   max-width: 1050px;
   width: 100%;
   margin: auto;
-  background-color: red;
+  background-color: rgb(128, 58, 0);
   /* z-index: -10; */
 
 }
@@ -77,8 +77,8 @@ body {
 
 .nav-container .hamburger-lines {
   display: block;
-  height: 20px;
-  width: 32px;
+  height: 16px;
+  width: 22px;
   position: absolute;
   top: 17px;
   left: 20px;
@@ -133,10 +133,10 @@ body {
 
 .logo {
   position: absolute;
-  align-items: center;
-  top: 10px;
+  justify-content: space-between;
+  top: 12px;
   right: 80px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: black;
 }
 
@@ -189,7 +189,9 @@ filter: grayscale(100%);
   margin: 45px;
 }
 .section p{
-  text-align: justify;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   text-wrap: wrap;
 }
 .form{
